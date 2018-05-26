@@ -5,6 +5,10 @@ urxvt.background: [90]#232629
 urxvt.depth: 32 
 #urxvt.foreground: #ffffff
 
+URxvt.saveLines: 12000
+
+# Won't show iso... when pressing Shift
+URxvt.iso14755: false
 
  urxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
  urxvt.url-select.launcher:  firefox
