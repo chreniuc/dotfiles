@@ -4,8 +4,10 @@ set $terminal urxvt
 gaps inner 5
 #gaps outer 10
 
-exec --no-startup-id compton
-exec --no-startup-id feh --bg-fill ~/configuration/background2.jpg
+bindsym $mod+n move workspace to output left
+
+exec --no-startup-id compton -b
+exec_always --no-startup-id "feh --bg-scale ~/data/wallpaper/1.jpg ~/data/wallpaper/2.jpg"
 
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id light-locker
